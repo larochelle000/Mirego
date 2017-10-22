@@ -1,22 +1,19 @@
 {
-  "name": "mirego",
+  "name": "serveur",
   "version": "1.0.0",
-  "description": "demo for mirego",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js"
   },
-  "keywords": [
-    "node",
-    "mongodb",
-    "mongoose",
-    "demo"
-  ],
-  "author": "Julien",
+  "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "mongoose": "^4.6.7"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
   }
 }
