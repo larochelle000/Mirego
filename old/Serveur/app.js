@@ -28,8 +28,8 @@ app.get('/find/:query', function(req, res) {
 		if (err) throw err;
 		if (result) {
 
-			
-			
+
+
 
 			var feed = {feed: "feed", friendsPosts: result, posts: [{
     "id": "zbLHl5QzTFQo",
@@ -80,10 +80,10 @@ app.get('/find/:query', function(req, res) {
       "url": "https://s3.amazonaws.com/shared.ws.mirego.com/competition/images/22195343_2000021746954268_777494157718426353_n.jpg"
     }
   }]}
-		
-			
+
+
 			res.json(feed);
-			
+
 		} else {
 			res.send(JSON.stringify({
 				error : 'Error'
@@ -101,7 +101,7 @@ app.post("/addinfo", (req, res) => {
     var myData = new User(req.body);
 
 	console.log(req.body);
-	
+
 
 
     myData.save()
