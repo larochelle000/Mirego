@@ -7,6 +7,6 @@ import retrofit2.http.GET;
 
 public interface FeedService {
 
-    @GET("find/users/")
+    @GET("find/infos/")
     Call<Feed> getFeed();
 }
